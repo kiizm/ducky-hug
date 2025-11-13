@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DuckyHug - Stories that warm hearts and spark imagination. Discover heartwarming tales for all ages.">
+    <meta name="keywords" content="children's books, stories, authors, heartwarming tales">
+    <title>DuckyHug - Stories that Warm Hearts</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <div class="logo-circle">
+                <a href="https://duckyhug.com"><span class="logo-icon"><img src="/img/ducky_hug_logo.png" width="100"></span></a>
+            </div>
+            <div class="logo-text"><a href="https://duckyhug.com" style="text-decoration: none;">DuckyHug</div>
+        </div>
+    </header>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Follow us on Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-icon youtube" aria-label="Subscribe on YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Hero/Paper Section -->
+        <section class="hero">
+            <!-- Mobile/Tablet Avatar Container -->
+            <div class="avatars-mobile avatars-tablet">
+                <img src="/img/Ducky_Hug_Female_Avatar.png" alt="Female Author" class="avatar">
+                <img src="/img/Ducky_Hug_Male_Avatar.png" alt="Male Author" class="avatar">
+            </div>
+
+            <!-- Scroll Indicator (Mobile Only) - Between avatars and welcome -->
+            <div class="scroll-indicator" id="scrollIndicator">
+                <p class="scroll-indicator-text">scroll for our books</p>
+                <div class="scroll-arrow">↓</div>
+            </div>
+
+            <div class="paper-container">
+                <!-- Desktop Corner Avatars -->
+                <img src="/img/Ducky_Hug_Female_Avatar.png" alt="Female Author" class="avatar avatar-left">
+                <img src="/img/Ducky_Hug_Male_Avatar.png" alt="Male Author" class="avatar avatar-right">
+
+                <!-- Paper Content -->
+                <div class="paper">
+                    <div class="flourish">❦</div>
+                    <h1>Welcome to DuckyHug</h1>
+                    <h2>Stories that Warm Hearts and Spark Imagination</h2>
+                    <div class="divider"></div>
+                    <p>
+                        At DuckyHug, we believe in the magic of storytelling. Our tales are crafted with love, designed to transport readers of all ages to worlds filled with wonder, adventure, and heartfelt moments that linger long after the last page is turned.
+                    </p>
+                    <p>
+                        We are a duo of passionate authors dedicated to creating stories that resonate with the North American spirit—tales of friendship, courage, and the simple joys that make life beautiful. Whether you're curling up with a book on a rainy afternoon or sharing a story with loved ones, our books are here to bring comfort and delight.
+                    </p>
+                    <p>
+                        Join us on this literary journey, and discover stories that will make you smile, think, and feel truly embraced by the warmth of a good book.
+                    </p>
+                    <div class="divider"></div>
+                    <div class="flourish">❦</div>
+                </div>
+            </div>
+
+            <!-- Email Signup Section -->
+            <div class="email-signup">
+                <div class="flourish">✉</div>
+                <h3>Join Our Story Circle</h3>
+                <p>Be the first to hear about new releases, exclusive content, and special reader perks delivered straight to your inbox.</p>
+                <form class="email-form" id="emailForm">
+                    <input 
+                        type="email" 
+                        class="email-input" 
+                        placeholder="Enter your email address" 
+                        required
+                        aria-label="Email address"
+                    >
+                    <button type="submit" class="email-submit">Count Me In! →</button>
+                </form>
+                <p class="form-message" id="formMessage"></p>
+            </div>
+        </section>
+
+        <!-- Books Sidebar with Carousel -->
+        <aside class="books-sidebar">
+            <h2>Our Stories</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="books-stack" id="booksStack">
+                        <div class="book-card">
+                            <div class="book-cover">Book Cover 1</div>
+                            <h3>The Golden Feather</h3>
+                            <p>A heartwarming tale of friendship and adventure</p>
+                            <a href="https://amazon.com" class="book-link" target="_blank">Get Your Copy →</a>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-cover">Book Cover 2</div>
+                            <h3>Whispers in the Willow</h3>
+                            <p>Discover the magic hidden in everyday moments</p>
+                            <a href="https://amazon.com" class="book-link" target="_blank">Get Your Copy →</a>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-cover">Book Cover 3</div>
+                            <h3>Moonlight Melodies</h3>
+                            <p>A collection of stories to warm your heart</p>
+                            <a href="https://amazon.com" class="book-link" target="_blank">Get Your Copy →</a>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-cover">Book Cover 4</div>
+                            <h3>Summer's Embrace</h3>
+                            <p>A journey through joy, love, and wonder</p>
+                            <a href="https://amazon.com" class="book-link" target="_blank">Get Your Copy →</a>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-cover">Book Cover 5</div>
+                            <h3>Dancing with Stars</h3>
+                            <p>An enchanting tale of dreams and courage</p>
+                            <a href="https://amazon.com" class="book-link" target="_blank">Get Your Copy →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Previous book">↑</button>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Next book">↓</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>DuckyHug</strong> - Stories that embrace the soul</p>
+        <p>Send us a message anytime <a href="https://www.facebook.com/DuckyHug">@duckyhug</a> - we’d love to hear from you!</p>
+        <p>&copy; 2025 DuckyHug. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
