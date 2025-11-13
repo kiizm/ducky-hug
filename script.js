@@ -62,7 +62,7 @@ function startAutoScroll() {
         if (!isPaused) {
             nextSlide();
         }
-    }, 4000); // Scroll every 4 seconds
+    }, 5000); // Scroll every 4 seconds
 }
 
 /**
