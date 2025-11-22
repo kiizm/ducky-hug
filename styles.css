@@ -300,6 +300,28 @@ header {
 /* ====================================
    Books Sidebar & Carousel
    ==================================== */
+
+   .books-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* On tablets & up: 2 per row */
+@media (min-width: 600px) {
+    .books-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* On desktops & up: 3 per row */
+@media (min-width: 900px) {
+    .books-wrapper {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 .books-sidebar {
     position: sticky;
     top: 40px;
@@ -427,6 +449,13 @@ header {
 .book-link:hover {
     background: #D68A2C;
     transform: scale(1.05);
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps it nicely cropped */
+    display: block;
 }
 
 /* ====================================
